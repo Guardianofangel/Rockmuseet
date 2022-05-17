@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Reposititories\" />
+    <None Remove="Interfaces\" />
+    <None Remove="models\" />
+    <None Remove="Helpers\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Pages\Histories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Histories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+</Project>
